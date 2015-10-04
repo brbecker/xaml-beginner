@@ -26,5 +26,9 @@
         <Button Content="Submit Order" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <ListView Grid.Row="1" Grid.Column="0" Grid.RowSpan="2" />
         <ListView Grid.Row="2" Grid.Column="2" />
+        <CommandBar Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Left" >
+            <AppBarButton Icon="Home" Label="Home" />
+        </CommandBar>
     </Grid>
+
 </Page>
