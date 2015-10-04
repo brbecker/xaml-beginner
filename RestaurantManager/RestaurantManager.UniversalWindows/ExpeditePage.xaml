@@ -14,5 +14,8 @@
         </Grid.RowDefinitions>
         <Button Content="Clear All Orders" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <GridView Grid.Row="0" Grid.Column="0" />
+        <CommandBar Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" >
+            <AppBarButton Label="Home" Icon="Home" Click="HomeButton_Click" />
+        </CommandBar>
     </Grid>
 </Page>
