@@ -18,8 +18,8 @@
             <RowDefinition Height="0.1*" />
         </Grid.RowDefinitions>
         <Button Content="Clear All Orders" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <GridView Grid.Row="0" Grid.Column="0" ItemsSource="{Binding OrderItems}" />
-        <AppBar Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" >
+        <GridView Grid.Row="0" Grid.Column="0" ItemsSource="{Binding OrderItems}" Margin="25" />
+        <AppBar Grid.Row="0" Grid.Column="0" >
             <AppBarButton Label="Home" Icon="Home" Click="HomeButton_Click" />
         </AppBar>
     </Grid>
