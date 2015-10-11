@@ -6,6 +6,12 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+
+    <Page.TopAppBar>
+        <AppBar>
+            <AppBarButton Label="Home" Icon="Home" Click="HomeButton_Click" />
+        </AppBar>
+    </Page.TopAppBar>
     
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.ColumnDefinitions>
@@ -26,8 +32,5 @@
         <Button Content="Submit Order" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <ListView Grid.Row="1" Grid.Column="0" Grid.RowSpan="2" ItemsSource="{Binding Source={StaticResource DataManager}, Path=MenuItems}" />
         <ListView Grid.Row="2" Grid.Column="2" ItemsSource="{Binding Source={StaticResource DataManager}, Path=CurrentlySelectedMenuItems}" />
-        <AppBar Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" >
-            <AppBarButton Label="Home" Icon="Home" Click="HomeButton_Click" />
-        </AppBar>
     </Grid>
 </Page>
