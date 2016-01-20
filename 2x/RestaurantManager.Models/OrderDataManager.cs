@@ -13,6 +13,8 @@ namespace RestaurantManager.Models
                 this.MenuItems[3],
                 this.MenuItems[5]
             };
+
+            this.OnPropertyChanged();
         }
 
         public List<MenuItem> MenuItems { get; set; }
